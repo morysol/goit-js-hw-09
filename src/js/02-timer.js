@@ -136,8 +136,8 @@ function visibleBtnCancel() {
 }
 
 function cancelArmageddon() {
-  // clearInterval(timerId);
+  clearInterval(timerId);
   document.querySelector('.geddon').classList.remove('visible');
   document.querySelector('.geddon button').removeEventListener('click', cancelArmageddon);
-  datesLimits.setOffset(1000000);
+  // datesLimits.setOffset(1000000);
 }
