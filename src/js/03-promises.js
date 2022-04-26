@@ -29,8 +29,6 @@ function formOnSubmit(event) {
     i <= amount.value;
     i += 1, myDelay += Number.parseInt(step.value)
   ) {
-    console.log(myDelay);
-
     createPromise(i, myDelay)
       .then(({ position, delay }) => {
         Notiflix.Notify.success(`✅ Fulfilled promise ${position} in ${delay} ms`);
